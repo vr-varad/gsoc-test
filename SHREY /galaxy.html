@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Milky Way Galaxy</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the Inter font and dark theme */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Dark background */
+            color: #e5e7eb; /* Light text */
+        }
+        .galaxy-gradient {
+            background: radial-gradient(at center, #1f2937 0%, #0d1117 100%);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-900 shadow-lg sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo/Site Title -->
+            <a href="#" class="text-3xl font-extrabold text-indigo-400 tracking-wider">
+                Cosmic Explorer
+            </a>
+            <!-- Navigation (Hidden on Mobile, flex on medium screens up) -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#overview" class="text-gray-300 hover:text-indigo-400 transition duration-150 p-2 rounded-lg">Overview</a>
+                <a href="#description" class="text-gray-300 hover:text-indigo-400 transition duration-150 p-2 rounded-lg">Structure</a>
+                <a href="#facts" class="text-gray-300 hover:text-indigo-400 transition duration-150 p-2 rounded-lg">Fast Facts</a>
+            </nav>
+            <!-- Mobile Menu Button Placeholder (Optional, for complexity) -->
+            <div class="md:hidden">
+                <button class="text-gray-300 focus:outline-none hover:text-indigo-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area - Milky Way Galaxy -->
+    <main class="flex-grow">
+        <div id="overview" class="galaxy-gradient py-16 sm:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h1 class="text-5xl sm:text-7xl font-extrabold text-white mb-4 leading-tight">
+                        The Milky Way Galaxy
+                    </h1>
+                    <p class="text-xl text-indigo-300 max-w-3xl mx-auto">
+                        Our celestial home in the vast universe—a breathtaking spiral of stars, dust, and dark matter.
+                    </p>
+                </div>
+
+                <!-- Galaxy Image and Visual Section -->
+                <div class="mt-16 bg-gray-900 p-6 rounded-3xl shadow-2xl">
+                    <div class="grid md:grid-cols-2 gap-10 items-center">
+                        <!-- Image Block -->
+                        <div class="relative w-full aspect-video md:aspect-square rounded-2xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition duration-500">
+                            <!-- Placeholder image for a galaxy (Note: External images/real galaxy photos cannot be hosted here, so a placeholder service is used) -->
+                            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fmilky-way-space-galaxy&psig=AOvVaw09WkcLD3l7FJrEqVWhk0z6&ust=1764090966383000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNjQiI2li5EDFQAAAAAdAAAAABAE"
+                                 alt="Artistic representation of the Milky Way Galaxy"
+                                 class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-end p-4">
+                                <span class="text-xs text-white/70">Image Source: Placeholder for illustration</span>
+                            </div>
+                        </div>
+
+                        <!-- Description Summary -->
+                        <div id="description">
+                            <h2 class="text-4xl font-bold text-white mb-6 border-b border-indigo-500 pb-2">
+                                Structure and Scale
+                            </h2>
+                            <p class="text-gray-300 text-lg leading-relaxed mb-4">
+                                The Milky Way is a barred spiral galaxy with a diameter of about 100,000–200,000 light-years and contains 100–400 billion stars. At its center lies a supermassive black hole known as Sagittarius A*. The solar system is located on the Orion Arm, approximately 27,000 light-years from the Galactic Center.
+                            </p>
+                            <p class="text-gray-400 italic text-base">
+                                Its name is derived from its appearance as a dim, glowing band arching across the night sky, made up of stars that cannot be individually distinguished by the naked eye.
+                            </p>
+                            <a href="#" class="mt-6 inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-full shadow-lg transition duration-300">
+                                Explore More Galaxies &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fast Facts Section -->
+                <div id="facts" class="mt-20">
+                    <h2 class="text-center text-4xl font-bold text-white mb-10">
+                        Milky Way Fast Facts
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Fact Card 1 -->
+                        <div class="bg-gray-800 p-6 rounded-xl shadow-lg border-t-4 border-indigo-500 hover:shadow-indigo-500/50 transition duration-300">
+                            <p class="text-5xl font-extrabold text-indigo-400 mb-2">~13.6</p>
+                            <p class="text-xl font-semibold text-white">Billion Years Old</p>
+                            <p class="text-sm text-gray-400 mt-2">The approximate age of the galaxy, nearly as old as the universe itself.</p>
+                        </div>
+                        <!-- Fact Card 2 -->
+                        <div class="bg-gray-800 p-6 rounded-xl shadow-lg border-t-4 border-indigo-500 hover:shadow-indigo-500/50 transition duration-300">
+                            <p class="text-5xl font-extrabold text-indigo-400 mb-2">27,000</p>
+                            <p class="text-xl font-semibold text-white">Light-Years to Center</p>
+                            <p class="text-sm text-gray-400 mt-2">The distance from the Solar System to Sagittarius A* (the central black hole).</p>
+                        </div>
+                        <!-- Fact Card 3 -->
+                        <div class="bg-gray-800 p-6 rounded-xl shadow-lg border-t-4 border-indigo-500 hover:shadow-indigo-500/50 transition duration-300">
+                            <p class="text-5xl font-extrabold text-indigo-400 mb-2">600 km/s</p>
+                            <p class="text-xl font-semibold text-white">Solar System Speed</p>
+                            <p class="text-sm text-gray-400 mt-2">The speed at which our Solar System orbits the Galactic Center.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 mt-auto border-t border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:flex md:justify-between md:items-center">
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <p class="text-sm text-gray-400">
+                    &copy; 2025 Cosmic Explorer. All rights reserved.
+                </p>
+            </div>
+            <div class="flex justify-center md:justify-end space-x-6">
+                <a href="#" class="text-sm text-gray-400 hover:text-indigo-400 transition duration-150">Privacy Policy</a>
+                <a href="#" class="text-sm text-gray-400 hover:text-indigo-400 transition duration-150">Contact</a>
+                <a href="#" class="text-sm text-gray-400 hover:text-indigo-400 transition duration-150">Sources</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
