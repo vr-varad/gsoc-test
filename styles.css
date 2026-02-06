@@ -9,11 +9,11 @@
 :root {
     --primary-color: #667eea;
     --secondary-color: #764ba2;
-    --accent-color: #f093fb;
-    --text-color: #333;
+    --accent-color: #2c323b;
+    --text-color: #b7446c;
     --text-light: #666;
     --bg-color: #ffffff;
-    --bg-light: #f8fafc;
+    --bg-light: #d3d9df;
     --border-color: #e2e8f0;
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
@@ -373,12 +373,12 @@ footer {
 
 /* DARK MODE */
 body.dark .testimonial-card {
-    background: #1a1a1a;
-    border-color: #2a2a2a;
+    background: #211b1b;
+    border-color: #807979;
 }
 
 body.dark .testimonial-card:hover {
-    background: #222;
+    background: #2f2b2b;
 }
 
 body.dark .testimonial-text {
